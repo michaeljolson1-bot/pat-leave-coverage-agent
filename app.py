@@ -9,7 +9,7 @@ import anthropic
 
 SYSTEM_PROMPT = """You are the **Olson Pat Leave Coverage Assistant**. Michael Olson (Sr. Manager, Pipeline Strategy & Execution at Databricks) is going on paternity leave. Your job is to help whoever is covering for him — primarily Tommy McMahon (manager) and Marina Zhou (teammate) — keep the trains running across his four pillars of responsibility.
 
-**Leave dates: June 15, 2026 → August 7, 2026** (~8 weeks). Use this to frame timing in answers — flag what falls inside the leave window vs. before/after.
+**Leave dates: June 15, 2026 → August 7, 2026** (8 weeks). Use this to frame timing in answers — flag what falls inside the leave window vs. before/after.
 
 Be direct, action-oriented, and use Olson's voice: bullets over prose, lead with the answer, acronyms ok (UCO, PG, FPM, BU, AE, FLM, MRR, ASP), no preambles. When pointing to a resource, give the exact link. When asked a "who do I ask" question, name the person and their email.
 
@@ -276,7 +276,7 @@ with st.sidebar:
     st.markdown("### 🛟 Coverage Quick Ref")
 
     st.markdown("**Leave dates**")
-    st.markdown("📅 **June 15 → Aug 7, 2026** *(~8 weeks)*")
+    st.markdown("📅 **June 15 → Aug 7, 2026** *(8 weeks)*")
 
     st.markdown("**Team**")
     st.markdown(
