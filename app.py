@@ -285,7 +285,7 @@ with st.sidebar:
     st.markdown(
         "- Programs reporting → **Siva Abbaraju**\n"
         "- Exec Pipe Council → **Samir Patel**\n"
-        "- Field Enablement → **Corey Jacoby / Marcus Young**\n"
+        "- Operating Framework → **Corey Jacoby / Marcus Young**\n"
         "- Phased UCO PMO → **Ed Rogers**"
     )
 
