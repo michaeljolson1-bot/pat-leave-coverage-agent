@@ -275,6 +275,9 @@ st.markdown("""
 with st.sidebar:
     st.markdown("### 🛟 Coverage Quick Ref")
 
+    st.markdown("**Leave dates**")
+    st.markdown("📅 **June 15 → Aug 7, 2026** *(~8 weeks)*")
+
     st.markdown("**Team**")
     st.markdown(
         "- Tommy McMahon *(Manager)*\n"
