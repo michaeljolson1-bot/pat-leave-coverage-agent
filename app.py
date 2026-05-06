@@ -338,6 +338,7 @@ if not st.session_state.messages:
     st.markdown("**💡 Try asking:**")
     suggestions = [
         "For End of Quarter — what do we need to do for Sales Programs?",
+        "For Quarter Kickoff — what do we need to do for Sales Programs?",
         "What do we populate for Sales Programs on Exec Pipe Council?",
         "How do we partner with the Product Programs team?",
         "Tell me about Multi-Phased UCOs",
