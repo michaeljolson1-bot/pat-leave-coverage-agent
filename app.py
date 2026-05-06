@@ -1,3 +1,4 @@
+import time
 import streamlit as st
 import anthropic
 
@@ -363,24 +364,44 @@ if prompt:
         placeholder = st.empty()
         full_response = ""
 
-        with client.messages.stream(
-            model="claude-opus-4-7",
-            max_tokens=1024,
-            system=[
-                {
-                    "type": "text",
-                    "text": SYSTEM_PROMPT,
-                    "cache_control": {"type": "ephemeral"},
-                }
-            ],
-            messages=[
-                {"role": m["role"], "content": m["content"]}
-                for m in st.session_state.messages
-            ],
-        ) as stream:
-            for text in stream.text_stream:
-                full_response += text
-                placeholder.markdown(full_response + "▌")
+        # Retry on transient overload / rate-limit errors
+        last_error = None
+        for attempt in range(4):
+            try:
+                with client.messages.stream(
+                    model="claude-opus-4-7",
+                    max_tokens=1024,
+                    system=[
+                        {
+                            "type": "text",
+                            "text": SYSTEM_PROMPT,
+                            "cache_control": {"type": "ephemeral"},
+                        }
+                    ],
+                    messages=[
+                        {"role": m["role"], "content": m["content"]}
+                        for m in st.session_state.messages
+                    ],
+                ) as stream:
+                    for text in stream.text_stream:
+                        full_response += text
+                        placeholder.markdown(full_response + "▌")
+                last_error = None
+                break
+            except (anthropic.APIStatusError, anthropic.RateLimitError, anthropic.APIConnectionError) as e:
+                last_error = e
+                full_response = ""
+                if attempt < 3:
+                    placeholder.markdown(f"⏳ Anthropic API busy — retrying in {2 ** attempt}s…")
+                    time.sleep(2 ** attempt)
+                continue
+
+        if last_error is not None:
+            full_response = (
+                "⚠️ Anthropic's API is temporarily overloaded or unreachable. "
+                "Please try your question again in a moment.\n\n"
+                f"_Technical detail: {type(last_error).__name__}_"
+            )
 
         placeholder.markdown(full_response)
 
