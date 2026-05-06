@@ -25,11 +25,12 @@ https://adb-2548836972759138.18.azuredatabricks.net/dashboardsv3/01f126e3fb7a1ae
 **Tommy McMahon** and **Marina Zhou** have edit access.
 
 EXEC PIPE COUNCIL UPDATES
+- **Tommy McMahon owns the slide for our team.** Samir Patel is our partner from the Programs side of the house — he supplies the Programs cuts and helps coordinate who presents from the FPMs.
 - Current format: populate the **Exec Pipeline Council** slide each cycle.
   - Latest example: Exec Pipeline Council - April 21 [FINAL] → https://docs.google.com/presentation/d/1vypzmwjKjS7fLrx2hxcqPsxVGNB1t6ioARbKEoSfdcQ/edit
   - That deck pulls in BU-specific update slides (each BU/FPM brings their own); recent agenda covered Pipe Gen & Funnel Health, U3/U6 Attainment, DWH Deep Dive, XFN Contribution (Sales Dev, Marketing, Partners).
 - **FY27 Q1 - Industry Programs** sheet feeds the deck: https://docs.google.com/spreadsheets/d/1J1cS_q4cYwskhVWawm1KTcykmhoF0EaC0MHjYC0w4lM/edit
-- Work with Samir Patel on data cuts + who presents.
+- Work with Samir on the Programs data cuts + alignment on who presents.
 - Recent council headline numbers (Q1 FY27 as of 4/15/26): Global PG pacing 126% vs target, Go-Live pacing 140% vs target, Go Live Participation 90%, AE Participation 93%. DWH PG attainment lags GTM Pipe by ~37pp — DWH PG productivity down -2% YoY, DWH PG ASP contraction -17% YoY.
 
 WHAT NEEDS TO HAPPEN AROUND Q-CLOSE / Q-KICKOFF (likely lands during leave)
@@ -59,7 +60,8 @@ PROGRAM CATEGORIES + KPIs (FY27 H1)
 - **Migration programs** — KPIs: U6 UCO $dbu (DWH); U3 win rate (Land Lakehouse); migration pilots (ADF); $DBU Serverless
 - **Priority Product programs** — Lakebase (U3 UCOs #), Genie (% Accts Genie Ready), AI Platform / Agentic Apps (AI+Apps Revenue)
 
-FPM ALIGNMENT BY BU (FY27 H1)
+FPM ↔ FIELD COVERAGE (FY27 H1)
+**These are generally BU+1 alignments** — each FPM is paired to a specific BU+1 (e.g., Industries-MFG, AEEB-CMEG) rather than a whole BU. Use this map when routing program questions or asking who owns a specific industry/segment cut.
 - AMER EE (CMEG) — **Khushboo Beniwal**
 - AMER EE (Retail) — **Allie Davis** (has left the company — gap)
 - Industries (MFG) — **Siva Abbaraju**
@@ -217,7 +219,7 @@ COVERAGE ROUTING TREE (default routing)
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 - Programs reporting / FPM coordination → **Siva Abbaraju**
-- Exec Pipe Council prep / readouts → **Samir Patel**
+- Exec Pipe Council deck owner → **Tommy McMahon** (Samir Patel = Programs-side partner who supplies the cuts)
 - Programs gold-table technical history → **Epi Watkins** (use sparingly)
 - Product Programs partnership → **Jon Delich** / **Kat Jimenez** / **David West**
 - Field Enablement / Operating Framework → **Corey Jacoby** / **Marcus Young**
@@ -270,20 +272,20 @@ st.markdown("""
 with st.sidebar:
     st.markdown("### 🛟 Coverage Quick Ref")
 
-    st.markdown("**Coverage owners**")
+    st.markdown("**Team**")
     st.markdown(
-        "- Tommy McMahon *(manager)*\n"
-        "- Marina Zhou *(reporting & AI)*"
+        "- Tommy McMahon *(Manager)*\n"
+        "- Marina Zhou\n"
+        "- Danny Gridley *(Intern)*\n"
+        "- J.C. Collins *(VP — Demand Gen)*"
     )
 
-    st.markdown("**Pillar POCs**")
+    st.markdown("**Coverage Area POCs**")
     st.markdown(
         "- Programs reporting → **Siva Abbaraju**\n"
         "- Exec Pipe Council → **Samir Patel**\n"
         "- Field Enablement → **Corey Jacoby / Marcus Young**\n"
-        "- Phased UCO PMO → **Ed Rogers**\n"
-        "- UCO Object owner → **Ashita Saluja**\n"
-        "- Escalation → **Lewis Hinch / Reena Shah**"
+        "- Phased UCO PMO → **Ed Rogers**"
     )
 
     st.markdown("**Top links**")
@@ -329,14 +331,13 @@ pending = st.session_state.pop("pending_question", None)
 if not st.session_state.messages:
     st.markdown("**💡 Try asking:**")
     suggestions = [
-        "What needs to happen at Q-kickoff for programs?",
-        "Who owns the Exec Pipe Council deck?",
-        "Walk me through the phased UCO interim guidance",
-        "Where is the source-of-truth attainment dash?",
-        "What's the status of FXO-048?",
-        "Which FPM owns which BU?",
+        "For End of Quarter — what do we need to do for Sales Programs?",
+        "What do we populate for Sales Programs on Exec Pipe Council?",
+        "How do we partner with the Product Programs team?",
+        "Tell me about Multi-Phased UCOs",
+        "Where can I see Programs Performance?",
+        "Tell me more about FPM field coverage",
         "What does our team own in the Operating Framework?",
-        "Who do I escalate to if something blows up?",
     ]
     cols = st.columns(2)
     for i, q in enumerate(suggestions):
