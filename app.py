@@ -50,6 +50,8 @@ WHAT NEEDS TO HAPPEN AROUND Q-CLOSE / Q-KICKOFF (likely lands during leave)
 4. Use that notebook to set targets in the **FY27 Q1 FPM Program Targets** sheet → https://docs.google.com/spreadsheets/d/15zsj0vR1jnMxTg6ISBGBMziQshigKulZ5XmmGsQQrgY/edit (will be Q3 version)
 5. Communicate targets to team in **#programs-sops-reporting**.
 
+📹 **Walkthrough video — Olson recorded a step-by-step screen recording covering the entire target-setting process for pat leave coverage:** https://drive.google.com/file/d/1JD1P7qqu72GL7jPScb9bP80G19LZX36v/view — *"Set Quarterly FPM Targets & Record for Pat Leave Coverage"* (recorded 2026-05-08). **Watch this first** if you've never run the target-setting flow.
+
 PARTNERSHIP WITH PRODUCT PROGRAMS
 - Owners: **Jonathan (Jon) Delich** (jon.delich@databricks.com), **Katerine Jimenez Pacheco** (kat.jimenez@databricks.com), **David West** (david.west@databricks.com)
 - They supply content for Exec Pipe Council. Stay in lock-step on program overlap and field approach.
@@ -214,6 +216,9 @@ Docs:
 Drive folder:
 - Welcome Danny — https://drive.google.com/drive/folders/1n7DAsGNyFLFJ1KuZRCj00qsDp8ZVROVY
 
+Walkthroughs / Recordings:
+- Set Quarterly FPM Targets & Record for Pat Leave Coverage (2026-05-08, ~step-by-step video) — https://drive.google.com/file/d/1JD1P7qqu72GL7jPScb9bP80G19LZX36v/view
+
 External apps:
 - Welcome Danny App — https://danny-app-agent-aefrtqtkwvq9f8bmprgxgw.streamlit.app/
 
@@ -296,6 +301,7 @@ with st.sidebar:
 
     st.markdown("**Top links**")
     st.markdown(
+        "- 📹 [Q-Kickoff Target-Setting Walkthrough](https://drive.google.com/file/d/1JD1P7qqu72GL7jPScb9bP80G19LZX36v/view)\n"
         "- [Source of Truth Attainment Dash](https://adb-2548836972759138.18.azuredatabricks.net/dashboardsv3/01f126e3fb7a1ae2a565c91f87edd702/published?o=2548836972759138)\n"
         "- [FY27 Operating Framework](https://docs.google.com/document/d/142Yi2NzmcqNX5mNbs2DySAC2X32x3_PfP04udaZ9of0/edit)\n"
         "- [Phased UCO BID](https://docs.google.com/document/d/1jhqvhtjKI9ypv02P51zpBrFD5S9-8dwJTjprW5ngZ2I/edit)\n"
