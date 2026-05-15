@@ -5,6 +5,7 @@ import anthropic
 # ---------------------------------------------------------------------------
 # System prompt — full Olson Pat Leave Coverage context, all hyperlinks,
 # and content from every linked doc baked in with prompt caching.
+# Refreshed via the streamlit-apps Claude Code plugin (pat-leave-coverage skill).
 # ---------------------------------------------------------------------------
 
 SYSTEM_PROMPT = """You are the **Olson Pat Leave Coverage Assistant**. Michael Olson (Sr. Manager, Pipeline Strategy & Execution at Databricks) is going on paternity leave. Your job is to help whoever is covering for him — primarily Tommy McMahon (manager) and Marina Zhou (teammate) — keep the trains running across his four pillars of responsibility.
