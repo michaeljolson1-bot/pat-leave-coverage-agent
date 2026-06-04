@@ -28,6 +28,10 @@ SOURCE OF TRUTH ATTAINMENT DASH
 https://adb-2548836972759138.18.azuredatabricks.net/dashboardsv3/01f126e3fb7a1ae2a565c91f87edd702/published?o=2548836972759138
 **Tommy McMahon** and **Marina Zhou** have edit access.
 
+DRAFT GTM HUB COMMUNITY DASH (not yet in use)
+https://adb-2548836972759138.18.azuredatabricks.net/dashboardsv3/01f154517ff11c1999d1bdecd509e268/published?o=2548836972759138
+Created to meet GTM Community requirements so we can get it into GTM Hub community. Tommy/Marina are editors. Still in DRAFT — not currently being used.
+
 EXEC PIPE COUNCIL UPDATES
 - **Tommy McMahon owns the slide for our team.** Samir Patel is our partner from the Programs side of the house — he supplies the Programs cuts and helps coordinate who presents from the FPMs.
 - Current format: populate the **Exec Pipeline Council** slide each cycle.
@@ -57,6 +61,11 @@ PARTNERSHIP WITH PRODUCT PROGRAMS
 - Owners: **Jonathan (Jon) Delich** (jon.delich@databricks.com), **Katerine Jimenez Pacheco** (kat.jimenez@databricks.com), **David West** (david.west@databricks.com)
 - They supply content for Exec Pipe Council. Stay in lock-step on program overlap and field approach.
 - Combined reporting is not yet built — long-term goal as their team moves toward leveraging the campaign object.
+- **Product Programs Exec Pipe Council slide** — Currently just one slide in the appendix. Instructions to update:
+  1. Go to the Source of Truth Attainment Dash → https://adb-2548836972759138.18.azuredatabricks.net/dashboardsv3/01f126e3fb7a1ae2a565c91f87edd702/published?o=2548836972759138 (click "download data" on top chart)
+  2. Add Raw Data to tab 2 in the Industry Programs sheet → https://docs.google.com/spreadsheets/d/1J1cS_q4cYwskhVWawm1KTcykmhoF0EaC0MHjYC0w4lM/edit?gid=219138043#gid=219138043
+  3. Pull Raw Data into Tab 1 — currently disconnected for manual override
+  4. Note: BU / BU+1 columns are manually filled in. Use existing mapping (programs don't change often) — if unsure, reach out to Siva Abbaraju.
 
 FY27 PROGRAMS LANDSCAPE (Slide 29 = FPM alignment)
 https://docs.google.com/presentation/d/15kwr4-nK-l5fE8ujPzsPlThvjj9OSj4uE90s29DMme4/edit
@@ -104,7 +113,7 @@ PILLAR 3 — PROCESS BUILDING (PHASED UCOs)
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 **Initiative:** Phased UCOs — formalizing how multi-phase customer use cases are tagged, tracked, and forecasted in the Use Case Object.
-**Status:** Expected to launch in the use case object in **Q2** (so this lands during/around leave).
+**Status:** ⚠️ **BID was deprioritized** by Lewis Hinch due to another overlapping effort. Originally expected Q2 launch — that is now on hold.
 **JIRA Ticket:** **FXO-048**
 
 PROBLEM BEING SOLVED
@@ -191,6 +200,7 @@ People (mailto):
 
 Dashboards & notebooks:
 - Source of Truth Attainment Dash — https://adb-2548836972759138.18.azuredatabricks.net/dashboardsv3/01f126e3fb7a1ae2a565c91f87edd702/published?o=2548836972759138
+- DRAFT GTM Hub Community Dash — https://adb-2548836972759138.18.azuredatabricks.net/dashboardsv3/01f154517ff11c1999d1bdecd509e268/published?o=2548836972759138
 - FPM Targets Workbook (Q-kickoff refresh) — https://adb-2548836972759138.18.azuredatabricks.net/editor/notebooks/327616664722602?o=2548836972759138
 - Multi-Phased UCO Analysis dashboard — https://adb-2548836972759138.18.azuredatabricks.net/dashboardsv3/01f13840fbfc19d6973ff430558cb316/published?o=2548836972759138
 
